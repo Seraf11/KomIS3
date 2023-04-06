@@ -10,24 +10,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Create report</title>
+    <title>Создвать отчёт</title>
+    <link href="create.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body>
-<h3>New report</h3>
-<form method="post">
-    <label>Pathmaster</label><br>
-    <input name="pathmaster"/><br><br>
-    <label>Brigade</label><br>
-    <input name="brigade"/><br><br>
-    <label>Railwayname</label><br>
-    <input name="railwayname"/><br><br>
-    <label>Sitename</label><br>
-    <input name="sitename"/><br><br>
-    <label>Datereport</label><br>
-    <input name="datereport"/><br><br>
-    <label>Textreport</label><br>
-    <input name="textreport"/><br><br>
-    <input type="submit" value="Save" />
-</form>
-</body>
+  <body>
+
+    <div class="navbar">
+      <a href="#" class="active">Новый отчёт</a>
+      <a href="/KomIS_war_exploded/index">Главная страница</a>
+    </div>
+    <form method="post">
+    <div class="menu">
+      <div class="row"> 
+        <div class ="col-25"> <label>Мастер путей</label> </div>
+        <div class="col-75"><input name="pathmaster"/></div> 
+      </div>
+      <div class="row"> 
+        <div class ="col-25"> <label>Бригада</label> </div>
+        <div class="col-75"><input name="brigade"/></div>
+      </div>
+      <div class="row"> 
+        <div class ="col-25"> <label>Наименование Ж/Д</label></div>
+        <div class="col-75"> <input name="railwayname"/></div> 
+      </div>
+     <div class="row"> 
+       <div class ="col-25"> <label>Номер участка</label></div>
+       <div class="col-75"> <input name="sitename"/></div>
+         
+       </div>
+      <div class="row"> 
+        <div class ="col-25"> <label>Дата отчёта</label></div>
+        <div class="col-75"><input name="datereport"/></div> 
+      </div>
+      <div class="row"> 
+        <div class ="col-25"><label>Текст отчёта</label> </div>
+        <div class="col-75"><input name="textreport"/></div>
+        </div>
+       <input id="button" type="submit" value="Сохранить" />
+    </div>
+        </form>
+  </body>
 </html>

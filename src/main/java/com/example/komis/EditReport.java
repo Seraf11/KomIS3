@@ -22,8 +22,9 @@ public class EditReport extends HttpServlet {
             throws ServletException, IOException {
 
         try {
-            int id_auto = Integer.parseInt(request.getParameter("id_auto"));
-            Report report = ReportDB.selectOne(id_auto);
+            int id_report = Integer.parseInt(request.getParameter("id_report"));
+            Report report = ReportDB.selectOne(id_report);
+            System.out.println(report);
             if(report!=null) {
                 request.setAttribute("report", report);
                 getServletContext().getRequestDispatcher("/edit.jsp").forward(request, response);

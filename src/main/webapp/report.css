@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body { 
+  background-color: #DCD7C9 !important;
+}
+.navbar {
+  width: 100%;
+  background-color: #DCD7C9;
+  overflow: auto;
+
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #DCD7C9;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+
+clr {
+  color: #DCD7C9;
+  text-decoration: none;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #3F4E4F;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 60%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+
+.button {
+  background-color: #A27B5C;
+  color: #DCD7C9;
+  width: auto;
+  height: 50px;
+  padding: 4px 4px;
+  border: 1px;
+  cursor: pointer;
+}
+
+.table-striped {
+  background-color: #DCD7C9;
+}
+
+th {
+  color: #2C3639;
+  text-align: center;
+}
+
+td {
+   color: #2C3639;
+}
+
+.box {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}

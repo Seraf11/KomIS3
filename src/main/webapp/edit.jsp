@@ -10,25 +10,67 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Edit report</title>
+    <title>Редактирование отчёта</title>
+     <link href="edit.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-<h3>Edit report</h3>
+<div class  = "navbar">
+  <a href="#" class = "active">Редактировать отчёт</a>
+  <a href="/KomIS_war_exploded/index">Главная страница</a>
+  </div>
+  <div class = "menu">
 <form method="post">
-    <input type="hidden" value="${report.id_report}" name="id_report" />
-    <label>Path master</label><br>
-    <input name="pathmaster" value="${report.pathmaster}" /><br><br>
-    <label>Brigade</label><br>
-    <input name="brigade" value="${report.brigade}" /><br><br>
-    <label>Railwayname</label><br>
-    <input name="pathmaster" value="${report.railwayname}" /><br><br>
-    <label>Sitename</label><br>
-    <input name="sitename" value="${report.sitename}" /><br><br>
-    <label>Date report</label><br>
-    <input name="datereport" value="${report.datereport}" /><br><br>
-    <label>Text report</label><br>
-    <input name="textreport" value="${report.textreport}" /><br><br>
-    <input type="submit" value="Send" />
+  <div class = "row">
+    <input type="hidden" value="${report.id_report}" name="id_report" /> 
+  </div>
+   <div class = "row"> 
+     <div class = "col-25">
+          <label>Дорожный мастер</label>
+  </div>
+   <div class = "col-75"> <input name="pathmaster" value="${report.pathmaster}" />
+     </div>
+  </div>
+  
+  <div class = "row">
+    <div class = "col-25">
+    <label>Бригада</label>
+  </div>
+    <div class = "col-75"><input name="brigade" value="${report.brigade}" />
+  </div>
+  </div>
+  <div class = "row">
+  <div class = "col-25">
+    <label>Наименование Ж/Д</label>
+    </div>
+     <div class = "col-75">
+       <input name="railwayname" value="${report.railwayname}" />
+  </div>
+  </div>
+  <div class = "row">
+  <div class = "col-25"> 
+    <label>Номер участка</label>
+    </div>
+    <div class = "col-75">
+      <input name="sitename" value="${report.sitename}" />
+  </div>
+  </div>
+  <div class = "row">
+  <div class = "col-25">
+    <label>Дата отчёта</label>
+    </div>
+     <div class = "col-75">
+       <input name="datereport" value="${report.datereport}" />
+  </div>
+  </div>
+  <div class = "row">
+  <div class = "col-25">
+    <label>Текст отчёта</label>
+    </div>
+    <div class = "col-75"> <input name="textreport" value="${report.textreport}" />
+  </div>
+  </div>
+    <input id="button" type="submit" value="Сохранить" />
 </form>
+  </div>
 </body>
 </html>
